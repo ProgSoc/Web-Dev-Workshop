@@ -1,13 +1,22 @@
-/*TODO, write content*/
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
 
 body {
 	background-color: #FFBB00;
-	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner {
 	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
 }
 
 .submission {
@@ -16,22 +25,27 @@ body {
 	margin: auto;
 }
 
-.submit {
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
+label, span, input, button {
+	width: 20%;
+	margin: auto;
+}
+
+button {
 	border-radius: 5px;
 	background-color: #252111;
 	border: none;
 	color: white;
 	text-align: center;
-	padding: 20px 20px;
+	padding: 5px 10px;
 	font-size: 16px;
 	display: block;
-	margin: auto;
-	margin-top: 20px;
 }
 
-* {
-	margin: 0;
-	padding: 0;
+label {
+	font-weight: bold;
+}
+
+input {
+	height: 25px;
+	padding-left: 5px;
 }

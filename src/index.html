@@ -18,17 +18,28 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form class="submission" action="" method="POST">
+	<div class="submission">
 		<img class="banner" src="./logo.png">
-		<br>
-		<label>Subject:</label>
-		<input type="text" id="subjectName">
-		<label>Marks:</label>
-		<input type="text" id="subjectMark">
-		<label>Units:</label>
-		<input type="text" id="subjectUnit">
-		<br>
-		<button class="submit">Submit</button>
-	</form>
+		<div class="row">
+			<label>Subject</label>
+			<label>Marks</label>
+			<label>Units</label>
+			<label></label>
+		</div>
+		<div id="subjectsTable">
+			<div class="row">
+				<span class="name">Subject Name</span>
+				<span class="mark">100</span>
+				<span class="units">6</span>
+				<button onclick="deleteSubject($(this).siblings('.name').text())">Delete</button>
+			</div>
+		</div>
+		<div class="row">
+			<input type="text" id="subjectName">
+			<input type="number" id="subjectMark" min="0" max="100">
+			<input type="number" id="subjectUnits" min="1" max="12">
+			<button onclick="createSubject()">Create</button>
+		</div>
+	</div>
 </body>
 </html>
